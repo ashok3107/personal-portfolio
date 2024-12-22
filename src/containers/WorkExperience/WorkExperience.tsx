@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
-import { TECH_CONSTANTS } from '../../constants/Tech';
 import { workExperience } from '../../constants/WorkExperience';
-import { iconMap } from '../../utils/iconsMap';
 import styles from './WorkExperience.module.scss';
 import Button from '../../components/Button/Button';
 import TechStackCard from '../../components/TechStackCard/TechStackCard';

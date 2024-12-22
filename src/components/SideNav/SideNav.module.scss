@@ -101,6 +101,10 @@
 .socialMediaLinks {
   display: flex;
   column-gap: 15px;
+  .btnImg {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .icon,

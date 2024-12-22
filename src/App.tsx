@@ -1,17 +1,13 @@
-import { useState } from 'react';
 import SideNav from './components/SideNav/SideNav';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, BrowserRouter, Routes, Navigate,  } from 'react-router-dom';
 
 import './App.css'
 import About from './components/About/About';
 import styles from './App.module.scss';
 import WorkExperience from './containers/WorkExperience/WorkExperience';
-import Education from './containers/Education/Education';
 import Portfolio from './containers/Portfolio/Portfolio';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <main className={styles.appContainer}>
@@ -19,11 +15,10 @@ function App() {
           <SideNav></SideNav>
           <div className={styles.tabContent}>
             <Routes>
-              <Route path="/" element={<About />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/experience" element={<WorkExperience />} />
-              <Route path="/education-and-recognitions" element={<Education />} />
-              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/personal-portfolio" element={<Navigate to="/personal-portfolio/about" />} />
+              <Route path="/personal-portfolio/about" element={<About />} />
+              <Route path="/personal-portfolio/experience" element={<WorkExperience />} />
+              <Route path="/personal-portfolio/portfolio" element={<Portfolio />} />
             </Routes>
           </div>
         </BrowserRouter>

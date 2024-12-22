@@ -1,8 +1,5 @@
-import { skills } from '../../constants/AboutConstants';
 import { iconMap } from '../../utils/iconsMap';
 import SectionHeading from '../SectionHeading/SectionHeading';
-import SkillCard from '../SkillCard/SkillCard';
-import StarRating from '../StarRatings/StarRatings';
 import TechStackCard from '../TechStackCard/TechStackCard';
 import styles from './About.module.scss';
 

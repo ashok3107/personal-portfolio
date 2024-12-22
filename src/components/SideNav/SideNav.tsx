@@ -1,29 +1,25 @@
-import Linkedin from '../../assets/icons/links/linkedin.svg?react';
-import GitHub from '../../assets/icons/links/github.svg?react';
+import Linkedin from '../../assets/icons/links/linkedin.svg';
+import GitHub from '../../assets/icons/links/github.svg';
 import Button from '../Button/Button';
 import styles from './SideNav.module.scss';
 import { Link } from 'react-router-dom';
 
-type SideNavProps = {
-
-};
-
 const sideNavLinks = [
   {
     label: 'About',
-    route: '/about',
+    route: '/personal-portfolio/about',
   },
   {
     label: 'Experience',
-    route: '/experience',
+    route: '/personal-portfolio/experience',
   },
   {
     label: 'Portfolio',
-    route: '/portfolio'
+    route: '/personal-portfolio/portfolio'
   }
 ];
 
-const SideNav = (props: SideNavProps) => {
+const SideNav = () => {
   return (
     <div className={styles.sideNavContainer}>
       <div className={styles.basicInfo}>
@@ -44,7 +40,7 @@ const SideNav = (props: SideNavProps) => {
             href="https://www.linkedin.com/in/ashok-madhavan-ramesh-347913194/"
             title="Linkedin Profile"
           >
-            <Linkedin height={30} width={30} />
+            <img className={styles.btnImg} src={Linkedin} alt="Linkedin logo" />
           </Button>
         </span>
         <span className={styles.linkIcon}>
@@ -52,7 +48,7 @@ const SideNav = (props: SideNavProps) => {
             href="https://github.com/ashok3107"
             title="My GitHub Profile"
           >
-            <GitHub height={30} width={30} />
+            <img className={styles.btnImg} src={GitHub} alt="Github logo" />
           </Button>
         </span>
       </div>
