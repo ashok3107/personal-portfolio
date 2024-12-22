@@ -14,9 +14,9 @@ const About = () => {
  ownership & leadership, innovative problem-solving / debugging skills and mentors junior developers.
       </div>
       <div className={styles.aboutMe}>
-      Have prior experience in building mobile applications from the ground up using React Native, Redux and UI libraries from the ground up and deployed
+      Have prior experience in building mobile applications from the ground up using React Native, Redux and deployed
       them in App store and Play store for several US based organizations during my time in Sirius. Have also worked on bringing up web applications
-      with Angular 4, Material UI and mobile applications for the same using Ionic 3.
+      with Angular 4, Vue, Material UI and mobile applications for the same using Ionic 3.
       </div>
       <div className={styles.skillCards}>
 

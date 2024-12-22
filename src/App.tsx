@@ -11,14 +11,14 @@ function App() {
   return (
     <>
       <main className={styles.appContainer}>
-        <BrowserRouter>
+        <BrowserRouter basename='/personal-portfolio'>
           <SideNav></SideNav>
           <div className={styles.tabContent}>
             <Routes>
-              <Route path="/personal-portfolio" element={<Navigate to="/personal-portfolio/about" />} />
-              <Route path="/personal-portfolio/about" element={<About />} />
-              <Route path="/personal-portfolio/experience" element={<WorkExperience />} />
-              <Route path="/personal-portfolio/projects" element={<Portfolio />} />
+              <Route path="/" element={<Navigate to="/about" />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/experience" element={<WorkExperience />} />
+              <Route path="/projects" element={<Portfolio />} />
             </Routes>
           </div>
         </BrowserRouter>

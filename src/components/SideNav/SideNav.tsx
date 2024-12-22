@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 const sideNavLinks = [
   {
     label: 'About',
-    route: '/personal-portfolio/about',
+    route: '/about',
   },
   {
     label: 'Experience',
-    route: '/personal-portfolio/experience',
+    route: '/experience',
   },
   {
     label: 'Portfolio',
-    route: '/personal-portfolio/projects'
+    route: '/projects'
   }
 ];
 
@@ -39,6 +39,7 @@ const SideNav = () => {
           <Button
             href="https://www.linkedin.com/in/ashok-madhavan-ramesh-347913194/"
             title="Linkedin Profile"
+            target='_blank'
           >
             <img className={styles.btnImg} src={Linkedin} alt="Linkedin logo" />
           </Button>
@@ -47,6 +48,7 @@ const SideNav = () => {
           <Button
             href="https://github.com/ashok3107"
             title="My GitHub Profile"
+            target='_blank'
           >
             <img className={styles.btnImg} src={GitHub} alt="Github logo" />
           </Button>
