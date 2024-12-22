@@ -1,0 +1,17 @@
+.skillCard {
+  display: flex;
+  gap: 10px;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 10px;
+  align-items: center;
+  background-color: #022154;
+  img {
+    width: 40px;
+  }
+  .skillItem {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted;
+    margin-bottom: 5px;
+  }
+}

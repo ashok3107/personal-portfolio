@@ -1,0 +1,22 @@
+.heading {
+  font-size: 1.6rem;
+}
+.horizontalLine {
+  display: block;
+  height: 1px;
+  margin: 10px 0;
+  border-bottom: 1px solid;
+  animation: animateLine 1s linear;
+}
+
+@keyframes animateLine {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}

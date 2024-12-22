@@ -1,0 +1,72 @@
+.aboutContainer {
+  color: white;
+  .aboutMe {
+    + .aboutMe {
+      margin: 10px 0 20px;
+    }
+  }
+  .skills {
+    // display: flex;
+    // gap: 20px;
+    // flex-wrap: wrap;
+    .skillItem {
+      width: calc(50% - 20px);
+      font-size: 1.2rem;
+    }
+    .logo {
+      width: 50px;
+    }
+    .technologyName {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .rating {
+      width: 30%;
+    }
+    .experience {
+      width: 10%;
+    }
+    .skillCard {
+      margin-bottom: 15px;
+      b {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .education {
+    margin-top: 25px;
+    .educationInfo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+      .collegeInfo {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: calc(100% - 60px);
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .aboutContainer{
+    .education {
+      .educationInfo {
+        .collegeInfo {
+          display: block;
+        }
+      }
+    }
+  }
+}

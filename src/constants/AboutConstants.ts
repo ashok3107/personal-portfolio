@@ -1,0 +1,93 @@
+export const skills = [
+  {
+    label: 'React',
+    value: 5,
+    rating: 'Excellent',
+    years: 6,
+    icon: 'react',
+  },
+  {
+    label: 'Redux',
+    value: 5,
+    rating: 'Excellent',
+    years: 6,
+    icon: 'redux',
+  },
+  {
+    label: 'Javascript',
+    value: 5,
+    rating: 'Excellent',
+    years: 7,
+    icon: 'javascript',
+  },
+  {
+    label: 'HTML 5',
+    value: 5,
+    rating: 'Excellent',
+    years: 7,
+    icon: 'html',
+  },
+  {
+    label: 'CSS 3',
+    value: 5,
+    rating: 'Excellent',
+    years: 7,
+    icon: 'css',
+  },
+  {
+    label: 'SASS',
+    value: 5,
+    rating: 'Excellent',
+    years: 6,
+    icon: 'sass',
+  },
+  {
+    label: 'Jest',
+    value: 5,
+    rating: 'Excellent',
+    years: 4,
+    icon: 'jest',
+  },
+  {
+    label: 'RTL',
+    value: 5,
+    rating: 'Excellent',
+    years: 4,
+    icon: 'rtl',
+  },
+  {
+    label: 'Antd',
+    value: 5,
+    rating: 'Excellent',
+    years: 3,
+    icon: 'antd',
+  },
+  {
+    label: 'TypeScript',
+    value: 4.5,
+    rating: 'Very Good',
+    years: 3,
+    icon: 'typescript',
+  },
+  {
+    label: 'jQuery',
+    value: 4.5,
+    rating: 'Very Good',
+    years: 2,
+    icon: 'jquery'
+  },
+  {
+    label: 'React Native',
+    value: 4,
+    rating: 'Good',
+    years: 2,
+    icon: 'reactNative'
+  },
+  {
+    label: 'Node.js',
+    value: 4,
+    rating: 'Good',
+    years: 2,
+    icon: 'nodedotjs',
+  },
+];

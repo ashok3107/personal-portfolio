@@ -1,0 +1,13 @@
+#root {
+  background: linear-gradient(90deg, rgb(5, 1, 69) 0%, rgb(9, 9, 121) 35%, rgb(0, 38, 149) 100%);
+  color: white;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 0 25px;
+}
+
+@media (max-width: 760px) {
+  #root {
+    padding-bottom: 25px;
+  }
+}
