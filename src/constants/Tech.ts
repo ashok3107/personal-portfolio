@@ -1,5 +1,8 @@
 type TechConstantsType = {
-  [key: string]: Object;
+  [key: string]: {
+    label: string;
+    icon: string;
+  };
 };
 
 export const TECH_CONSTANTS: TechConstantsType = {
