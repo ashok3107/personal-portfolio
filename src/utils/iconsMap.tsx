@@ -46,8 +46,10 @@ import Sirius from "../assets/icons/companies/sirius.png";
 import Tekion from "../assets/icons/companies/tekion.jpg";
 
 import Graduation from "../assets/icons/education/graduation.svg";
-
-export const iconMap = {
+type IconMapType = {
+  [key: string]: any,
+};
+export const iconMap: IconMapType = {
   ui: UI,
   optimization: Optimization,
   api: API,

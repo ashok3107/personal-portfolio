@@ -1,4 +1,8 @@
-export const TECH_CONSTANTS = {
+type TechConstantsType = {
+  [key: string]: Object;
+};
+
+export const TECH_CONSTANTS: TechConstantsType = {
   react: {
     label: 'React',
     icon: 'react',
