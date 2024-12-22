@@ -6,9 +6,6 @@
     }
   }
   .skills {
-    // display: flex;
-    // gap: 20px;
-    // flex-wrap: wrap;
     .skillItem {
       width: calc(50% - 20px);
       font-size: 1.2rem;
@@ -35,7 +32,8 @@
     .skillCard {
       margin-bottom: 15px;
       b {
-        margin-bottom: 10px;
+        display: block;
+        margin-bottom: 8px;
       }
     }
   }

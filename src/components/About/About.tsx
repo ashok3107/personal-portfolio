@@ -18,9 +18,6 @@ const About = () => {
       them in App store and Play store for several US based organizations during my time in Sirius. Have also worked on bringing up web applications
       with Angular 4, Vue, Material UI and mobile applications for the same using Ionic 3.
       </div>
-      <div className={styles.skillCards}>
-
-      </div>
       <SectionHeading headingText="Skills" />
       <div className={styles.skills}>
         {/* {
