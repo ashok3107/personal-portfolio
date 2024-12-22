@@ -1,5 +1,5 @@
 import SideNav from './components/SideNav/SideNav';
-import { Route, BrowserRouter, Routes, Navigate,  } from 'react-router-dom';
+import { Route, BrowserRouter, Routes, Navigate, HashRouter,  } from 'react-router-dom';
 
 import './App.css'
 import About from './components/About/About';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <main className={styles.appContainer}>
-        <BrowserRouter basename='/personal-portfolio'>
+        <HashRouter>
           <SideNav></SideNav>
           <div className={styles.tabContent}>
             <Routes>
@@ -21,7 +21,7 @@ function App() {
               <Route path="/projects" element={<Portfolio />} />
             </Routes>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </main>
     </>
   )
