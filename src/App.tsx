@@ -1,5 +1,5 @@
 import SideNav from './components/SideNav/SideNav';
-import { Route, BrowserRouter, Routes, Navigate, HashRouter,  } from 'react-router-dom';
+import { Route, Routes, Navigate, HashRouter,  } from 'react-router-dom';
 
 import './App.css'
 import About from './components/About/About';
