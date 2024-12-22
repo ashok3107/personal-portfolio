@@ -15,7 +15,7 @@ const sideNavLinks = [
   },
   {
     label: 'Portfolio',
-    route: '/personal-portfolio/portfolio'
+    route: '/personal-portfolio/projects'
   }
 ];
 

@@ -18,7 +18,7 @@ function App() {
               <Route path="/personal-portfolio" element={<Navigate to="/personal-portfolio/about" />} />
               <Route path="/personal-portfolio/about" element={<About />} />
               <Route path="/personal-portfolio/experience" element={<WorkExperience />} />
-              <Route path="/personal-portfolio/portfolio" element={<Portfolio />} />
+              <Route path="/personal-portfolio/projects" element={<Portfolio />} />
             </Routes>
           </div>
         </BrowserRouter>
