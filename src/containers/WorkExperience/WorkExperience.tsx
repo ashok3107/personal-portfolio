@@ -20,7 +20,6 @@ const WorkExperience = () => {
           </div>
         </div>
       )} />
-      {/* {workExperience.map(experience => ( */}
         <div className={styles.workExperienceContainer}>
           <div className={styles.workExperienceItem}>
             <div className={styles.orgDetails}>
@@ -31,11 +30,11 @@ const WorkExperience = () => {
               <div className={styles.timeline}>{experience.timeline}</div>
             </div>
             {experience.projects.map(project => (
-              <div className={styles.projectDetails}>
+              <div className={styles.projectDetails} key={project.projectName}>
                 <div className={styles.projectName}>{project.projectName}</div>
                 <ul className={styles.projectExp}>
-                  {project.projectExp.map(projectExpItem => (
-                    <li>{projectExpItem}</li>
+                  {project.projectExp.map((projectExpItem, index) => (
+                    <li key={index}>{projectExpItem}</li>
                   ))}
                 </ul>
                 <div className={styles.techStack}>
