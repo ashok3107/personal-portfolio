@@ -1,6 +1,6 @@
 import { iconMap } from '../../utils/iconsMap';
-import SectionHeading from '../SectionHeading/SectionHeading';
-import TechStackCard from '../TechStackCard/TechStackCard';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
+import TechStackCard from '../../components/TechStackCard/TechStackCard';
 import styles from './About.module.scss';
 
 const About = () => {

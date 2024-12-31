@@ -3,6 +3,7 @@ import GitHub from '../../assets/icons/links/github.svg';
 import Button from '../Button/Button';
 import styles from './SideNav.module.scss';
 import { Link } from 'react-router-dom';
+import { useLinkManagerContext } from '../../store/link-manger-context';
 
 const sideNavLinks = [
   {
@@ -20,6 +21,7 @@ const sideNavLinks = [
 ];
 
 const SideNav = () => {
+  const linkManager = useLinkManagerContext();
   return (
     <div className={styles.sideNavContainer}>
       <div className={styles.basicInfo}>
@@ -29,7 +31,7 @@ const SideNav = () => {
       </div>
       <div className={styles.sideNavLinks}>
         {sideNavLinks.map(navLink => (
-          <Link key={navLink.route} className={styles.navLinkItem} to={navLink.route}>
+          <Link onClick={() => linkManager?.updateCurrPath(navLink.route)} key={navLink.route} className={`${styles.navLinkItem} ${linkManager?.currPathKey === navLink.route ? styles.highlight : ''}`} to={navLink.route}>
             {navLink.label}
           </Link>
         ))}

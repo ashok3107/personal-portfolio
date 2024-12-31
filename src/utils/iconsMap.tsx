@@ -47,7 +47,7 @@ import Tekion from "../assets/icons/companies/tekion.jpg";
 
 import Graduation from "../assets/icons/education/graduation.svg";
 type IconMapType = {
-  [key: string]: any,
+  [key: string]: string,
 };
 export const iconMap: IconMapType = {
   ui: UI,

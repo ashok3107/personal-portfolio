@@ -1,0 +1,1 @@
+export const getCurrRoute = () => window.location.hash.split('#')[1];
