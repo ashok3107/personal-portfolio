@@ -9,5 +9,6 @@
 @media (max-width: 760px) {
   #root {
     padding: 25px 25px 50px;
+    box-sizing: border-box;
   }
 }
